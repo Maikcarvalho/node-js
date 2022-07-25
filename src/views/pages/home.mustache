@@ -1,0 +1,23 @@
+{{>partials/header}}
+
+    <section>
+        
+        Opa, {{nome}} seja bem-vindo!
+
+        {{#exibirIdade}}
+            Você é maior de idade
+        {{/exibirIdade}}
+
+        {{#movies}}
+        <ul>
+            <li> {{title}} - {{ano}} </li>
+
+        </ul>
+        {{/movies}}
+
+        {{>partials/footer}}
+
+    </section>
+
+</body>
+</html>
